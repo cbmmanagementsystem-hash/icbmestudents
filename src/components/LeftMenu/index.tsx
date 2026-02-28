@@ -95,7 +95,8 @@ export default function LeftMenu({ menuList }: LeftMenuProps) {
         {menuList.map((m, index) => {
           const active = isItemActive(m);
           const hasSubmenu = Boolean(m.subMenu && m.subMenu.length > 0);
-
+          
+          const a =a a=a=a=a=a=
           const Icon = m.icon;
 
           return (
