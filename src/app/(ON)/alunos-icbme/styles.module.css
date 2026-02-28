@@ -1,0 +1,27 @@
+/* styles.module.css (RootLayout) */
+
+.layout{
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  height: 100dvh;         /* <-- trava no viewport */
+}
+
+.content{
+  min-width: 0;
+  height: 100dvh;         /* <-- altura fixa pra habilitar o scroll interno */
+  overflow: auto;         /* <-- agora o scroll fica aqui */
+  background: #fff;
+}
+
+@media (max-width: 900px){
+  .layout{
+    display: block;
+    height: auto;
+  }
+
+  .content{
+    height: auto;
+    min-height: calc(100dvh - 56px);
+    overflow: auto;
+  }
+}

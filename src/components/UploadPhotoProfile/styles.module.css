@@ -1,0 +1,54 @@
+/* styles.module.css (ou qualquer .css) */
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-height: 95vh;
+  background-color: #fff; /* 'background.paper' do MUI → substituído por branco */
+  border-radius: 10px;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+              0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+              0px 9px 46px 8px rgba(0, 0, 0, 0.12); /* equivalente ao shadow 24 do MUI */
+  padding: 32px; /* p: 4 no MUI ≈ 32px */
+}
+
+
+.divItens{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  width: auto;
+  max-height: 75vh;
+  margin: 10px 0px;
+  overflow:auto;
+  background-color: #1c94703f;
+  border-radius: 10px;
+
+}
+
+.img{
+  transition: all 200ms;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.img:hover{
+  cursor: pointer;
+  opacity: 0.5;
+ /*transform: scale(1.1);*/
+
+}
+
+.p{
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #1c9470;
+  padding: 10px 20px;
+  border-radius: 10px;
+  
+}
